@@ -1,6 +1,6 @@
 # VPC Key-Protect VSI Encription
 
-En esta guía encontrará como crear en IBM Cloud un  Virtual Servers for Virtual Private Cloud que utilicen cifrado gestionado por el cliente para volúmenes de almacenamiento de bloques, este cifrado protege los datos en tránsito y en reposo. De igual manera, la instancia del servidor virtual se suministra con un volumen de arranque que de igual manera incluye este cifrado gestionado por el cliente, que para este caso en Key Protect.
+En esta guía encontrará como crear en IBM Cloud un  Virtual Server (VSI) en un Virtual Private Cloud (VPC) que utilice cifrado gestionado por el cliente para volúmenes de almacenamiento de bloques, este cifrado protege los datos en tránsito y en reposo. De igual manera, la instancia del servidor virtual se suministra con un volumen de arranque que de igual manera incluye este cifrado gestionado por el cliente, que para este caso es Key Protect.
 
 ### 1. Creación del servicio de Key Protect.
 
