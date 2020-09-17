@@ -28,10 +28,22 @@ Mediante los siguientes pasos podrá crear una clave raíz en la consola de IBM 
 ### 3. Cree acceso desde el servicio origen y Key Protect.
 
 A través de IBM Cloud Identity and Access Management (IAM), autorice el acceso entre Cloud Block Storage (servicio de origen) y Key Protect (servicio de destino).
-El rol que se habilitará es de lector entre el servicio origen y destino.
+El acceso al servicio origen -> destino va a tener rol de lector.
 
 ![3](https://user-images.githubusercontent.com/60628267/93506247-a0f59300-f8e1-11ea-9a89-0ddf312d4347.gif)
 
+### 4. Suministro del servidor virtual con volúmenes que utilizan cifrado gestionado por el cliente (Key Protect).
 
+Al momento de crear una instancia de servidor virtual, se debe especificar el cifrado gestionado por el cliente para el volumen de arranque y para cualquier volumen de datos que se desee añadir, esto es importante realizarlo en este momento, pues son datos a los que no se podrá tener acceso una vez creada la instancia. El cifrado gestionado por el cliente - Key Protect, protege los datos en tránsito y en reposo.
+
+  1. En la consola de IBM Cloud, dentro del menú > Infraestructura de VPC > Cálculo > Instancias de servidor virtual. Pulse en Nueva instancia y complete los campos.
+  
+  ![5](https://user-images.githubusercontent.com/60628267/93508790-73f6af80-f8e4-11ea-9ce8-052960cdb69a.gif)
+
+   2. Cree un nuevo volúmen de datos para el cual proporcione el nombre, tamaño, cifrado, nombre de la instancia de cifrado y el nombre de la clave; estos últimos campos son los pertenecientes al Key Protect. Esto tambien debe tenerlo en cuenta para el volúmen de arranque.
+   
+   ![6](https://user-images.githubusercontent.com/60628267/93511409-64796580-f8e8-11ea-8dd1-7c48832beed0.gif)
+
+    
 
 
