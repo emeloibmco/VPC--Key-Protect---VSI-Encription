@@ -44,6 +44,5 @@ Al momento de crear una instancia de servidor virtual, se debe especificar el ci
    
    ![6](https://user-images.githubusercontent.com/60628267/93511409-64796580-f8e8-11ea-8dd1-7c48832beed0.gif)
 
-    
-
+  Puede acceder a la instancia del servidor virtual para observar mas detalladamente el cifrado que le proporcionó al volumen de arranque y de disco.
 
